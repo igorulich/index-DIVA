@@ -1,0 +1,84 @@
+%svg-common {
+	background: url("sprite.svg") no-repeat;
+}
+
+.faceboock {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.faceboock-dims {
+	width: 60px;
+	height: 60px;
+}
+
+.iconA {
+	@extend %svg-common;
+	background-position: 50% 0;
+}
+
+.iconA-dims {
+	width: 60px;
+	height: 60px;
+}
+
+.iconB {
+	@extend %svg-common;
+	background-position: 46.875% 93.75%;
+}
+
+.iconB-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.iconC {
+	@extend %svg-common;
+	background-position: 0 50%;
+}
+
+.iconC-dims {
+	width: 60px;
+	height: 60px;
+}
+
+.iconD {
+	@extend %svg-common;
+	background-position: 50% 50%;
+}
+
+.iconD-dims {
+	width: 60px;
+	height: 60px;
+}
+
+.iconF {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.iconF-dims {
+	width: 60px;
+	height: 60px;
+}
+
+.iconG {
+	@extend %svg-common;
+	background-position: 100% 50%;
+}
+
+.iconG-dims {
+	width: 60px;
+	height: 60px;
+}
+
+.instagram {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.instagram-dims {
+	width: 60px;
+	height: 60px;
+}
+

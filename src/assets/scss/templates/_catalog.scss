@@ -1,0 +1,139 @@
+section.catalog {
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	background-color: #e6e6e6;
+	padding: 0 0 40px;
+	z-index: z("catalog");
+}
+
+.catalog-title h3 {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.title-anime h3 {
+	width: 10%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: calc(18px + 24 * (100vw / 1920));
+	line-height: 1.23;
+	font-family: "Georgia", Arial, sans-serif;
+	font-weight: 400;
+	padding: 5px 0 15px;
+	color: #1d6161;
+	@include _480 {
+		width: 100%;
+	}
+}
+
+.catalog-text p {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: calc(14px + 9 * (100vw / 1920));
+	font-family: "Georgia", Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+	padding: 0 25%;
+	@include _480 {
+		padding: 0;
+	}
+}
+
+.container-fluid.catalog-content {
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: 1920px;
+	width: 100%;
+	padding: 0 6%;
+	@include flex-container();
+	@include _480 {
+		flex-direction: column;
+		padding: 0;
+	}
+}
+
+.catalog-content-item {
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: 650px;
+	width: 50%;
+	min-height: 300px;
+	height: 100%;
+	overflow: hidden;
+	@include _480 {
+		width: 100%;
+	}
+	&:hover img {
+		padding: 28px 38px 0 0;
+		transform: scale(1.1);
+		opacity: 1;
+		filter: blur(0);
+		filter: saturate(1);
+	}
+	@include _480 {
+		&:hover img {
+			padding: 15px 15px 0 15px;
+			transform: scale(1.1);
+			opacity: 1;
+			filter: blur(0);
+			filter: saturate(1);
+		}
+	}
+}
+
+.catalog-content-item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 600px;
+	width: 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	max-height: 300px;
+	cursor: pointer;
+	padding: 15px 15px 0 0;
+	transition: all 1s linear;
+	overflow: hidden;
+	filter: saturate(0.6);
+	@include _480 {
+		padding: 15px 15px 0 15px;
+	}
+}
+
+.content-item-link h4 {
+	position: relative;
+	top: 120px;
+	padding: 0 29%;
+	font-family: "MediatorSerif";
+	color: #ffffff;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.448), 1px 1px 1px rgba(0, 0, 0, 0.497);
+	font-size: calc(21px + 28 * (100vw / 1920));
+	line-height: 1.23;
+	font-weight: 600;
+	@include _480 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+}
+.catalog-content-item a {
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+}

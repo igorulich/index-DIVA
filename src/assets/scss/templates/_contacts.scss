@@ -1,0 +1,264 @@
+section.container-fluid.contacts {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 1920px;
+	@include _480{
+		top: 0;
+	}
+}
+.contacts-title {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.title-anime h3 {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 30%;
+	text-align: center;
+	font-size: calc(19px + 23 * (100vw / 1920));
+	line-height: 1.23;
+	font-family: Georgia, Arial, sans-serif;
+	font-weight: 400;
+	color: #1d6161;
+	@include _480{
+		width: 100%;
+	}
+}
+.contacts-content {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	width: 80%;
+	padding-bottom: 40px;
+	@include _480{
+		flex-direction: column;
+		width: 100%;
+	}
+}
+.contacts-content-avatar-inner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	max-height: 560px;
+	height: 100%;
+	@include _480{
+		width: 100%;
+	}
+}
+.contacts-content-block {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 35%;
+	@include _480{
+		padding-left: 5%;
+		justify-content: space-between;
+	}
+}
+ul.content-title {
+	padding: 5px 0;
+}
+a.content-phone {
+	color: #000000;
+	font-size: calc(14px + 6 * (100vw / 1920));
+	font-family: serif;
+	line-height: 1.45;
+	font-weight: 400;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+}
+.content-title h6 {
+	color: #000000;
+	font-size: calc(14px + 6 * (100vw / 1920));
+	font-family: "MediatorSerif", Arial, sans-serif;
+	line-height: 1.55;
+	font-weight: 600;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+}
+a.content-email,
+a.content-phone {
+	color: #000000;
+	font-size: calc(12px + 6 * (100vw / 1920));
+	font-family: sans-serif;
+	line-height: 1.45;
+	font-weight: 400;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+	text-decoration: none;
+}
+.content-icons {
+	max-width: 60px;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+}
+li.icons {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+}
+a.faceboock,
+a.instagram {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: all 1s linear;
+	&:hover {
+		opacity: 1;
+	}
+}
+.avatar-poster {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-height: 435px;
+	height: 100%;
+}
+.avatar-poster img {
+	position: inherit;
+	top: 0;
+	left: 33%;
+	width: 65%;
+	max-height: 435px;
+	height: 100%;
+	@include _480{
+		left: 0;
+		width: 100%;
+	}
+}
+
+.contacts-content-form-inner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	max-height: 435px;
+	height: 100%;
+	width: 50%;
+	@include _480{
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 100%;
+		max-height: 335px;
+		width: 100%;
+	}
+}
+.content-form-descr {
+	padding: 40% 5% 0;
+	width: 100%;
+	@include _480{
+		padding: 10% 5% 0;
+	}
+}
+.content-form-descr p {
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: calc(14px + 9 * (100vw / 1920));
+	font-family: "Georgia", Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+}
+.content-form-title {
+	padding: 15% 12% 5%;
+	@include _480{
+		padding: 5% 7% 5%;
+	}
+}
+.content-form-title h6 {
+	color: #000000;
+	font-size: calc(18px + 9 * (100vw / 1920));
+	font-family: "MediatorSerif", Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+	text-align: center;
+}
+ul.content-form-messenger-block {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 45%;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #e6e6e6;
+	@include _480{
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+li.block-item {
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 30%;
+	min-height: 60px;
+}
+.messenger,
+.telegram,
+.viber {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 42px;
+	height: 42px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 0.7;
+	&:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+}
+.viber img {
+	width: 42px;
+	height: 42px;
+}
+.telegram img {
+	width: 42px;
+	height: 42px;
+}
+a.messenger {
+	width: 42px;
+	height: 42px;
+}
